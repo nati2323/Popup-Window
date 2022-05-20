@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Mobile-Version-Portfolio
+> Mobile-and-Desktop-Version-Portfolio
 
 
 ## Built With
