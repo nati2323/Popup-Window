@@ -1,0 +1,3 @@
+# to skip test.md file
+test.md 
+node_modules
