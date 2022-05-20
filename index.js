@@ -188,3 +188,65 @@ Array.from(portfolio.children).forEach((child, index) => {
     </div>
   </section>`;
 });
+// modals
+Array.from(portfolio.children).forEach((item, index) => {
+  item.firstElementChild.lastElementChild.lastElementChild.firstElementChild.addEventListener(
+    'click',
+    () => {
+      modal.innerHTML = `
+    <!-- Modal content -->
+    <section class="modal-content">
+      <div class="popup-text-group">
+        <div class="text-group">
+          <h2 class="popup-text-lg">${data[index].name}</h2>
+          <div class="client-info">
+            <h3 class="client">${data[index].job.client}</h3>
+            <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
+            <h3 class="role">${data[index].job.role}</h3>
+            <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
+            <h3 class="year-label">${data[index].job.year}</h3>
+          </div>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+      <ul>
+        <li><img src="${data[index].image.mobile}" alt="icon" class="img-1-1" /></li>
+        <li><img src="${data[index].image.desktop}" alt="icon" class="img-1-2 popup-img" /></li>
+      </ul>
+      <div class="popup-bottom">
+        <p class="popup-text-sm">${data[index].description.portfolio}</p>
+        <div class="popup-block">
+          <ul class="tags ${data[index].id}">
+          </ul>
+          <div class="popup-actions">
+            <button class="btn btnImg" id="btn" type="button">See Live
+              <img src="./image/btnIcon-1.svg" alt="icon" id="imgIcon" />
+            </button>
+            <button class="btn btnImg" id="btn" type="button">See Source
+              <img src="./image/cat.svg" alt="icon" id="imgIcon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    `;
+
+      const ulList = document.querySelector('.popup-block .tags');
+
+      Object.keys(data[index].technologies).forEach((e) => {
+        ulList.innerHTML += <li>${data[index].technologies[e]}</li>;
+      });
+
+      modal.style.display = 'block';
+      const span = document.getElementsByClassName('close')[0];
+      span.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+  );
+});
