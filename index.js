@@ -247,6 +247,6 @@ Array.from(portfolio.children).forEach((item, index) => {
           modal.style.display = 'none';
         }
       });
-    }
+    },
   );
 });
