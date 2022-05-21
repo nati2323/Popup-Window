@@ -15,8 +15,8 @@ const data = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
     image: {
-      mobile: './assets/portfolio/tonic.svg',
-      desktop: './assets/desktop/Snapshoot-Portfolio-1.svg',
+      mobile: './image/portfolio/tonic.svg',
+      desktop: './image/desktop/Snapshoot-Portfolio-1.svg',
     },
     technologies: {
       html: 'html',
@@ -40,8 +40,8 @@ const data = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
     image: {
-      mobile: './assets/portfolio/multi-post-stories.svg',
-      desktop: './assets/desktop/Snapshoot-Portfolio-2.svg',
+      mobile: './image/portfolio/multi-post-stories.svg',
+      desktop: './image/desktop/Snapshoot-Portfolio-2.svg',
     },
     technologies: {
       html: 'html',
@@ -66,8 +66,8 @@ const data = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
     image: {
-      mobile: './assets/portfolio/tonic-2.svg',
-      desktop: './assets/desktop/Snapshoot-Portfolio-3.svg',
+      mobile: './image/portfolio/tonic-2.svg',
+      desktop: './image/desktop/Snapshoot-Portfolio-3.svg',
     },
     technologies: {
       html: 'html',
@@ -92,8 +92,8 @@ const data = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
     image: {
-      mobile: './assets/portfolio/multi-post-stories-2.svg',
-      desktop: './assets/desktop/Snapshoot-Portfolio-4.svg',
+      mobile: './image/portfolio/multi-post-stories-2.svg',
+      desktop: './image/desktop/Snapshoot-Portfolio-4.svg',
     },
     technologies: {
       html: 'html',
@@ -169,9 +169,9 @@ Array.from(portfolio.children).forEach((child, index) => {
         <h2 class="lg-text-2">${data[index].name}</h2>
         <div class="client-info">
           <h3 class="client">${data[index].job.client}</h3>
-          <a href="#"><img src="./assets/Counter.svg" alt="counter" /></a>
+          <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
           <h3 class="role">${data[index].job.role}</h3>
-          <a href="#"><img src="./assets/Counter.svg" alt="counter" /></a>
+          <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
           <h3 class="year-label">${data[index].job.year}</h3>
         </div>
       </div>
@@ -202,9 +202,9 @@ Array.from(portfolio.children).forEach((item, index) => {
           <h2 class="popup-text-lg">${data[index].name}</h2>
           <div class="client-info">
             <h3 class="client">${data[index].job.client}</h3>
-            <a href="#"><img src="./assets/Counter.svg" alt="counter" /></a>
+            <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
             <h3 class="role">${data[index].job.role}</h3>
-            <a href="#"><img src="./assets/Counter.svg" alt="counter" /></a>
+            <a href="#"><img src="./image/Counter.svg" alt="counter" /></a>
             <h3 class="year-label">${data[index].job.year}</h3>
           </div>
         </div>
@@ -221,10 +221,10 @@ Array.from(portfolio.children).forEach((item, index) => {
           </ul>
           <div class="popup-actions">
             <button class="btn btnImg" id="btn" type="button">See Live
-              <img src="./assets/btnIcon-1.svg" alt="icon" id="imgIcon" />
+              <img src="./image/btnIcon-1.svg" alt="icon" id="imgIcon" />
             </button>
             <button class="btn btnImg" id="btn" type="button">See Source
-              <img src="./assets/cat.svg" alt="icon" id="imgIcon" />
+              <img src="./image/cat.svg" alt="icon" id="imgIcon" />
             </button>
           </div>
         </div>
