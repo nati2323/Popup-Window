@@ -231,23 +231,3 @@ Array.from(portfolio.children).forEach((item, index) => {
       </div>
     </section>
     `;
-
-      const ulList = document.querySelector('.popup-block .tags');
-
-      Object.keys(data[index].technologies).forEach((e) => {
-        ulList.innerHTML += `<li>${data[index].technologies[e]}</li>`;
-      });
-
-      modal.style.display = 'block';
-      const span = document.getElementsByClassName('close')[0];
-      span.addEventListener('click', () => {
-        modal.style.display = 'none';
-      });
-      window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    }
-  );
-});
